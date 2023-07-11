@@ -4,8 +4,8 @@
 
 <div class="container mt-5">
   <% @lists.each do |list| %>
-    <div class="card" style="width: 18rem;">
-    <%= cl_image_tag list.photo.key, width: 400, height: 300, crop: :fill %>
+    <div class="card" style="width: 400px;">
+    <%= cl_image_tag list.photo.key, width: 400, height: 200, crop: :fill %>
     <div class="card-body">
       <h5 class="card-title"><%= link_to list.name, list %></h5>
     </div>

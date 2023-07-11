@@ -1,5 +1,6 @@
 <div class="container">
   <h1><%= @list.name %></h1>
+  <%= cl_image_tag @list.photo.key, width: 1000, height: 500, crop: :fill %> <br>
   <%= link_to "Add movie", new_list_bookmark_path(@list), class: "btn btn-success text-white fw-bold" %>
   <div class="d-flex-wrap row">
     <% @list.bookmarks.each do |bookmark| %>
