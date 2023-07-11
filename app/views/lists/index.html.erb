@@ -1,7 +1,14 @@
-<div class="container">
-  <h1>THE LISTS!</h1>
+<div class="banner d-flex align-items-center">
+  <h1 class="m-auto text-white shadow-lg fw-bold">Save any kind of movies</h1>
+</div>
 
-    <% @lists.each do |list| %>
-      <h2><%= link_to list.name, list %></h2>
+<div class="container mt-5">
+  <% @lists.each do |list| %>
+    <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><%= link_to list.name, list %></h5>
+    </div>
+</div>
   <% end %>
 </div>
