@@ -1,13 +1,13 @@
 <div class="banner d-flex align-items-center">
-  <h1 class="m-auto text-white shadow-lg fw-bold">Save any kind of movies</h1>
 </div>
 
-<div class="container mt-5">
+<div class="container mt-5 d-flex-wrap">
+  <h1 class="text-center">Your Lists</h1>
   <% @lists.each do |list| %>
     <div class="card" style="width: 400px;">
     <%= cl_image_tag list.photo.key, width: 400, height: 200, crop: :fill %>
-    <div class="card-body">
-      <h5 class="card-title"><%= link_to list.name, list %></h5>
+    <div class="card-body m-auto">
+      <%= link_to list.name, list, class: " fs-3 stretched-link link-secondary link-danger-hover link-underline link-underline-opacity-0 text-center" %>
     </div>
 </div>
   <% end %>

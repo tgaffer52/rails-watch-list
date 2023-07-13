@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsWatchList</title>
+    <title>Trevor's Rails Watch List</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,7 +12,8 @@
 
   <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex">
-    <h1 class="flex-grow-1 fa-solid fa-film mx-3"></h1>
+    <h1 class="fa-solid fa-film mx-3"></h1>
+    <h3 class="m-auto text-center fw-bold flex-grow-1">Watch List - Save any kind of movies</h3>
     <%= link_to "My lists", lists_path, class: "nav-link mx-2" %>
     <%= link_to "New list", new_list_path, class: "nav-link mx-2" %>
   </div>
