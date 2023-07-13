@@ -1,14 +1,14 @@
 <div class="index-banner d-flex align-items-center">
 </div>
 
-<div class="container mt-5 d-flex-wrap">
+<div class="container mt-5 d-flex-wrap row">
   <h1 class="text-center">Your Lists</h1>
   <% @lists.each do |list| %>
-    <div class="card" style="width: 400px;">
-    <%= cl_image_tag list.photo.key, width: 400, height: 200, crop: :fill %>
-    <div class="card-body m-auto">
-      <%= link_to list.name, list, class: " fs-3 stretched-link link-secondary link-danger-hover link-underline link-underline-opacity-0 text-center" %>
+    <div class="card m-3" style="width: 400px;">
+      <%= cl_image_tag list.photo.key, class: "list-image" %>
+      <div class="card-body">
+        <%= link_to list.name, list, class: " fs-3 stretched-link link-secondary link-danger-hover link-underline link-underline-opacity-0 text-center" %>
+      </div>
     </div>
-</div>
   <% end %>
 </div>
